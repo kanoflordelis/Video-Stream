@@ -57,7 +57,7 @@ class StreamList extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="ui container">
 				<h2>Streams</h2>
 				<div className="ui celled list">{this.renderList()}</div>
 				{this.renderCreate()}

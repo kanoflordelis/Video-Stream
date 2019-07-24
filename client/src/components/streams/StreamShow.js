@@ -46,15 +46,27 @@ class StreamShow extends React.Component {
 
 		return (
 			<div>
-				<div style={{ width: '700px', height: '400px', margin: '0 auto' }}>
+				<div
+					className="ui fluid container"
+					style={{ height: '580px', paddingBottom: '50px' }}
+				>
 					<video
 						ref={this.videoRef}
 						style={{ width: '100%', height: '100%' }}
 						controls={true}
 					/>
 				</div>
-				<h1>{title}</h1>
-				<h5>{description}</h5>
+				<div className="ui container">
+					<div style={{ margin: '0 100px' }}>
+						<h1>{title}</h1>
+						<div className="ui red label">
+							<i className="heart outline icon" />
+							259
+						</div>
+						<div className="ui divider" />
+						<h5>{description}</h5>
+					</div>
+				</div>
 			</div>
 		);
 	}

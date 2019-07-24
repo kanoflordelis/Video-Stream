@@ -18,7 +18,7 @@ class StreamEdit extends React.Component {
 			return <div>Loading...</div>;
 		}
 		return (
-			<div>
+			<div className="ui container">
 				<h3>Edit a stream</h3>
 				<StreamForm
 					initialValues={_.pick(this.props.stream, 'title', 'description')}
